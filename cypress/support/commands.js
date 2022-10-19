@@ -54,3 +54,20 @@ Cypress.Commands.add('login', () => {
         } //antes da pagina carregar, interage com o browser
        })
 })
+Cypress.Commands.add('createNewIncident', () => {
+    cy.request({
+        method: 'POST',
+        url: 'http://localhost:3333/incidents',
+        headers: {'Authorization': `${Cypress.env('createdOngId')}`}, //caso criado para essa ong(id) em específico 
+        body: {
+            description: 'teste cypress',
+            title: 'teste',
+            value: '500'
+        } 
+    }).then(response => {
+        expect(response.body.id).is.not.null;
+        cy.log(response.body.id);
+
+        Cypress.env('createdIncidentId', response.body.id)
+    })
+})
