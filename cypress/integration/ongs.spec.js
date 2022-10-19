@@ -1,10 +1,10 @@
 /// <reference types="cypress" /> 
 
-
+import '../support/commands'
 
 
 describe('Ongs', () => {
-    it('deve poder realizar um cadastro', () => {
+    it.skip('deve poder realizar um cadastro', () => {
         cy.visit('http://localhost:3000/register');
         //cy.get busca um elemento
         //type insere um texto
@@ -33,10 +33,18 @@ describe('Ongs', () => {
         })
 
     });
-    it('deve poder realizar um login no sistema', () => {
+    it.skip('deve poder realizar um login no sistema', () => {
 
         cy.visit('http://localhost:3000/');
         cy.get('input').type(Cypress.env('createdOngId'));
         cy.get('.button').click();
     });
+
+    it('deve poder fazer logout', () => {
+      
+        cy.login();
+        cy.get('button').click();
+
+
+    })
 }); //coloca o que está testando, cada it vai ser um teste.

@@ -45,3 +45,12 @@ Cypress.Commands.add("createOng", () => {
         Cypress.env('createdOngId', response.body.id) //cria variavel de ambiente temporaria pra ser usada durante o teste
     }) 
 })
+
+Cypress.Commands.add('login', () => {
+    cy.visit('http://localhost:3000/profile', { 
+        onBeforeLoad: (browser)=> {
+            browser.localStorage.setItem('ongId', Cypress.env('createdOngId'));
+            browser.localStorage.setItem('ongName', Cypress.env('teste'));
+        } //antes da pagina carregar, interage com o browser
+       })
+})
