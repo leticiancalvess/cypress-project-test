@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Nov 02 20:08:30 BRT 2022","Wed Nov 02 20:08:33 BRT 2022","3310","","","","","","deve poder realizar um login no sistema",""
+"passed","Wed Nov 02 20:08:33 BRT 2022","Wed Nov 02 20:08:35 BRT 2022","1925","","","","","","deve poder cadastrar novos casos",""
+"passed","Wed Nov 02 20:08:37 BRT 2022","Wed Nov 02 20:08:39 BRT 2022","2700","","Ongs","","","","deve poder realizar um cadastro",""
+"passed","Wed Nov 02 20:08:36 BRT 2022","Wed Nov 02 20:08:37 BRT 2022","683","","","","","","deve poder fazer logout",""
+"passed","Wed Nov 02 20:08:35 BRT 2022","Wed Nov 02 20:08:36 BRT 2022","963","","","","","","deve poder excluir um caso",""
