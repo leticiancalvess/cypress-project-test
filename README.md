@@ -19,8 +19,7 @@ Passo a passo para executar os testes:
   - `npm install`
   - `./node_modules/.bin/cypress open`
   
-  Se quiser, apague o projeto do Cypress e tente fazer do zero acompanhando o vídeo. 
-  Bons estudos!
+ 
 
 
 ## PageObjects
